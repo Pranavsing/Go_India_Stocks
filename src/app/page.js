@@ -28,10 +28,10 @@ const Page = () => {
           onClick={() => handleSectionChange("discussion")}
         >
           <h1
-            className={`text-white bg-blue-700 sm:text-blue-700 font-extrabold sm:bg-white hover:cursor-pointer rounded-xl pt-4 pb-4 text-2xl md:text-3xl m-4 mx-auto text-center ${
+            className={`bg-blue-700 sm:text-blue-700 font-extrabold sm:bg-white hover:cursor-pointer rounded-xl pt-4 pb-4 text-2xl md:text-3xl m-4 mx-auto text-center ${
               selectedSection === "discussion"
                 ? "bg-blue-700 text-white border-b-4 border-orange-500 sm:border-b-0"
-                : "bg-white text-blue-700"
+                : "bg-white text-blue-700 sm:text-blue-700 sm:bg-white"
             }`}
           >
             Discussion Forum
@@ -42,10 +42,10 @@ const Page = () => {
           onClick={() => handleSectionChange("market")}
         >
           <h1
-            className={`text-white bg-blue-700 font-extrabold sm:text-blue-700 sm:bg-white hover:cursor-pointer rounded-xl pt-4 pb-4 text-2xl md:text-3xl m-4 mx-auto text-center ${
+            className={`bg-blue-700 font-extrabold sm:text-blue-700 sm:bg-white hover:cursor-pointer rounded-xl pt-4 pb-4 text-2xl md:text-3xl m-4 mx-auto text-center ${
               selectedSection === "market"
                 ? "bg-blue-700 text-white border-b-4 border-orange-500 sm:border-b-0"
-                : "bg-white text-blue-700"
+                : "bg-white text-blue-700 sm:text-blue-700 sm:bg-white"
             }`}
           >
             Market Stories
